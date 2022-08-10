@@ -9,9 +9,8 @@ click play all button<br><br>
 
 version 1<br>
 contains Deva,Rushi,Yama,Pitru Tarpana Mantras<br>
-this mantras help you to provide water to deceased members <br>
-of your family and life.<br>
-It helps them to give a better position and power.<br><br>
+these mantras help you to provide water to deceased members of your family.<br>
+It helps them to regain power and strength.<br><br>
 
 for more information<br>
 https://www.vedicastrologer.org/tarpana/<br><br>
