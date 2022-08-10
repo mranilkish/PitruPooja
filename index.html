@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Pitru Pooja</title></head><body><h3>Pitru Pooja Simulator:</h3>
+<input name="f1" value="Generic" type="checkbox"  disabled="disabled" checked="checked" >Generic<br>
+<br>
+<input name="f1" value="f" type="checkbox">Father <br>
+<input name="f1" value="ff" type="checkbox">Father Father<br>
+<input name="f1" value="fff" type="checkbox">Father Father Father<br>
+<input name="f1" value="fm" type="checkbox">Father&nbsp; Mother<br>
+<input name="f1" value="ffm" type="checkbox">Father Father Mother<br>
+<br>
+<br>
+<input name="m1" value="m1" type="checkbox">Mother<br>
+<input name="m1" value="m2" type="checkbox">Mother Father<br>
+<input name="m1" value="m3" type="checkbox">Mother Father Father<br>
+<input name="m1" value="m4" type="checkbox">Mother Mother<br>
+<input name="m1" value="m5" type="checkbox">Mother Father Mother<br>
+<br>
+<br>
+
+
+<input name="m1" value="m6" type="checkbox">Husband 
+<input name="m1" value="m7" type="checkbox">Wife<br>
+<br>
+<input name="m1" value="m8" type="checkbox">Son 
+<input name="m1" value="m9" type="checkbox">Daughter<br>
+<br>
+<input name="m1" value="ma" type="checkbox">Father Brother
+<input name="m1" value="mb" type="checkbox">Father Sister<br>
+<input name="m1" value="mc" type="checkbox">Friend
+<input name="m1" value="md" type="checkbox" checked="checked">Well-Wishers<br>
+<input name="m1" value="me" type="checkbox">Siblings of same Generation<br>
+<br>
+<input name="m1" value="mf" type="checkbox">Brother
+<input name="m1" value="mg" type="checkbox">Sister<br>
+<br>
+<input name="m1" value="mh" type="checkbox">Son's Son
+<input name="m1" value="mi" type="checkbox">Son's Daughter<br>
+<input name="m1" value="mj" type="checkbox">Daughter's Son
+<input name="m1" value="mk" type="checkbox">Daughter's Daughter 
+<br>
+<button id="play-all">Play all</button>
+<div id="sounds"></div>
+<input type="button" onclick="f()" value="Update List">
+<input type="button" onclick="g()" value="Display test">
+
+<script>
+var kk,j;
+var audioArray=[];
+f();
+    function f()
+    {
+        j=-1;
+        audioArray=[];
+        audioArray[++j]="snd/devarushiyama.mp3"
+        document.getElementById('sounds').innerHTML="";
+    ff=document.getElementsByName("f1")
+    m=document.getElementsByName("m1")
+   // alert(ff[1].value)kk= new Audio('f.mp3')kk.play()
+   for(i=0;i<ff.length;i++)
+   if(ff[i].checked) audioArray[++j]="snd/"+ff[i].value+".mp3"
+    
+   for(i=0;i<m.length;i++)
+   if(m[i].checked) audioArray[++j]="snd/"+m[i].value+".mp3"
+   audioArray[++j]="snd/ENDP.mp3"
+
+   for (const src of audioArray) {
+  const audio = document.createElement("audio");
+  document.querySelector("#sounds").append(audio);
+  audio.controls = "controls";
+  audio.src = src;
+
+}
+document
+  .querySelector("#play-all")
+  .addEventListener("click", async e => {
+    const sounds = document.querySelectorAll("#sounds audio");
+    
+    for (const sound of sounds) {
+      const ended = new Promise(resolve =>
+        sound.addEventListener("ended", resolve, {once: true})
+      );
+      sound.play();
+      await ended;
+    }
+  })
+;
+   
+    }
+    function g()
+    {
+        str="List of Audio in Sequence: "
+        for(i=0;i<audioArray.length;i++)
+        str+= audioArray[i]+","
+        alert(str)
+    }
+
+  
+
+</script>
+
+</body></html>
