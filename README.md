@@ -1,10 +1,10 @@
 # PitruPooja
 Basic rituals that everyone has to perform to boost their deceased members.
-
+<br><br>
 https://mranilkish.github.io/PitruPooja/
 
-select deceased members
-update the audio list using update list button 
+select deceased members<br>
+update the audio list using update list button <br>
 click play all button
 
 version 1
