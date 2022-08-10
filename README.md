@@ -1,5 +1,5 @@
 # PitruPooja
-basic riruals that everyone has to perform to boost deceased members.
+Basic rituals that everyone has to perform to boost their deceased members.
 
 https://mranilkish.github.io/PitruPooja/
 
@@ -15,3 +15,6 @@ It helps them to give a better position and power.
 
 for more information
 https://www.vedicastrologer.org/tarpana/
+
+Advantages of these rituals:
+1. it gives strength to you members  for their comeback.
