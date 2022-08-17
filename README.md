@@ -16,4 +16,4 @@ for more information<br>
 https://www.vedicastrologer.org/tarpana/<br><br>
 
 Advantages of these rituals:<br>
-1. it gives strength to you members and self for their comeback.<br>
+1. it gives strength to your members for their comeback and removes obstacles in your journey of life.<br>
